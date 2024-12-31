@@ -23,5 +23,18 @@ I used the data in https://github.com/paskhaver/pandas-in-action
  apply method로 각 value에 함수를 적용시킬 수 있다.
 
 ## chapter_04_the_dataframe_object
+ DataFrame은 행과 열로 구성된 2차원 자료구조이다. 
  
+ loc와 iloc를 이용해서 특정 행이나 열을 추출할 수 있다.
+ 
+ reset_index 를 이용하여 index를 하나의 열로 바꿀 수 있다.
+
+## chapter_05_filtering_a_dataframe
+ astype method를 이용해서 series의 데이터 유형을 변경하고 이를 이용해 사용 메모리를 줄일 수 있다.
+ 
+ &, |, < 등을 이용해서 논리연산을 적용시킬 수 있다.
+ 
+ fillna, dropna를 이용하여 NaN 값을 상수로 치환하거나 제거할 수 있다.
+
+## chapter_06_working_with_text_data
  

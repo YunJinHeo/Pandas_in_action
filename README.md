@@ -89,4 +89,23 @@ I used the data in https://github.com/paskhaver/pandas-in-action
 
  DataFrame을 엑셀 통합문서로 저장하려면 ExcelWriter 객체를 인스턴스화하고 to_excel method로 Dataframe을 저장한 뒤에 ExcelWriter object에서 close() 를 호출하면 된다.
 
+## chapter_13_options_and_settings
+ pandas는 options 객체에 설정을 저장한다.
+ 
+ pd.describe_option(' ') -> 정규표현식 기반으로 해당 문자열을 포함하는 라이브러리 설정을 출력한다.
+
+ pd.get_option(' ') or pd.options.display.~~-> 해당 라이브러리 설정의 현재 값을 가져온다.
+
+ pd.set_option(' ') -> 해당 라이브러리의 설정 값을 변경한다.
+
+ 'display.max_rows', 'display.max_columns' -> dataframe에서 출력되는 최대 행, 열의 갯수를 설정
+
+ 'display.precision' -> 부동 소수점 숫자 뒤의 자리수를 결정
+
+ 'display.max_colwidth' -> 텍스트를 자르기 전에 출력할 최대 문자 수를 결정
+
+ 'display.chop_threshold' -> 출력할 최소 임계값을 설정
+
+ with와 option_context를 이용해서 컨텍스트 블록을 생성할 수 있다. 컨텍스트블록은 임시 실행 환경으로 특정 셀의 출력 형태를 변환시켜주고 전역 설정에는 영향을 주지 않는다.
+
 

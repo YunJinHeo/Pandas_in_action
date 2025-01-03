@@ -108,4 +108,10 @@ I used the data in https://github.com/paskhaver/pandas-in-action
 
  with와 option_context를 이용해서 컨텍스트 블록을 생성할 수 있다. 컨텍스트블록은 임시 실행 환경으로 특정 셀의 출력 형태를 변환시켜주고 전역 설정에는 영향을 주지 않는다.
 
+## chapter_14_visualization
+ matplotlib.pyplot 라이브러리는 다양한 시각화 툴을 제공한다.
+
+ .plot() -> 선그래프를 그린다. 매개변수 y로 시각화할 column을 지정하고 colormap으로 그레프의 색상을 지정할 수 있다.
+
+ 매개변수 kind 에 bar, barh, pie 등을 넣어 바그래프, 파이차트를 만들 수 있다.
 
